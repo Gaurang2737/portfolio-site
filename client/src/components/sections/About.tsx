@@ -16,7 +16,7 @@ import { profile } from "@/data/profile";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-24 md:pt-32 md:pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-2 text-center">About Me</h2>
         <div className="w-24 h-1 bg-primary rounded-full mx-auto mb-12"></div>
