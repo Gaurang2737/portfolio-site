@@ -76,7 +76,7 @@ const About: React.FC = () => {
             
             <div className="flex gap-4">
               <Button asChild variant="default" className="bg-gray-900 hover:bg-gray-800">
-                <a href={profile.resumeUrl} download>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" /> Download Resume
                 </a>
               </Button>

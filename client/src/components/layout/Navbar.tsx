@@ -97,11 +97,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               </a>
             ))}
             <a
-              href="#waitlist"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md transition-colors inline-block w-full text-center"
               onClick={closeMenu}
             >
-              Join Waitlist
+              Resume
             </a>
           </div>
         </div>
