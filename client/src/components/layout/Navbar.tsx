@@ -61,9 +61,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               {item.label}
             </a>
           ))}
-          <a href="#waitlist">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Join Waitlist
+              Resume
             </Button>
           </a>
         </div>
