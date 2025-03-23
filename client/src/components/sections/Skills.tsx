@@ -1,8 +1,23 @@
 import React from "react";
-import SkillBar from "@/components/ui/skill-bar";
-import DonutChart from "@/components/ui/donut-chart";
+import SkillTag from "@/components/ui/skill-tag";
 import { motion } from "framer-motion";
-import { skills, areaOfExpertise, stats } from "@/data/skills";
+import { skills, stats } from "@/data/skills";
+
+// Group skills by category
+const skillCategories = {
+  "Programming Languages": [
+    "JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"
+  ],
+  "Frameworks & Libraries": [
+    "React", "Node.js", "Express", "TensorFlow", "PyTorch", "Pandas", "NumPy", "scikit-learn"
+  ],
+  "Tools & Platforms": [
+    "Git", "Docker", "AWS", "Google Cloud", "Jupyter", "VS Code", "PostgreSQL", "MongoDB"
+  ],
+  "Data Science & Analytics": [
+    "Machine Learning", "Data Visualization", "Statistical Analysis", "NLP", "Computer Vision"
+  ]
+};
 
 const Skills: React.FC = () => {
   return (
@@ -11,57 +26,36 @@ const Skills: React.FC = () => {
         <h2 className="text-3xl font-bold mb-2 text-center">Technical Skills</h2>
         <div className="w-24 h-1 bg-primary rounded-full mx-auto mb-12"></div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left Column: Skill Bars */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Skills by Category */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
+            className="lg:col-span-2"
           >
-            <h3 className="text-xl font-semibold mb-6">Programming & Tools</h3>
-            
-            {skills.map((skill, index) => (
-              <SkillBar
-                key={index}
-                name={skill.name}
-                level={skill.level}
-                delay={index * 0.1}
-              />
+            {Object.entries(skillCategories).map(([category, categorySkills]) => (
+              <div key={category} className="mb-8">
+                <h3 className="text-xl font-semibold mb-4 border-l-4 border-primary pl-3">{category}</h3>
+                <div className="flex flex-wrap bg-gray-50/50 p-4 rounded-xl">
+                  {categorySkills.map((skill, index) => (
+                    <SkillTag key={index} name={skill} />
+                  ))}
+                </div>
+              </div>
             ))}
           </motion.div>
           
-          {/* Right Column: Pie Chart for Skills Areas */}
+          {/* Stats Cards */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
+            className="lg:col-span-2"
           >
-            <h3 className="text-xl font-semibold mb-6">Areas of Expertise</h3>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="flex items-center justify-center mb-6">
-                <DonutChart data={areaOfExpertise} />
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4">
-                {areaOfExpertise.map((area, index) => (
-                  <div key={index} className="flex items-center">
-                    <div 
-                      className="w-4 h-4 rounded-full mr-2" 
-                      style={{ backgroundColor: area.color }}
-                    ></div>
-                    <div>
-                      <div className="font-medium">{area.name}</div>
-                      <div className="text-sm text-gray-500">{area.value}%</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
                 <div key={index} className="bg-white rounded-lg p-4 shadow-sm text-center">
                   <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
