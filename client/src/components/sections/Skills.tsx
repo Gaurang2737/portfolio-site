@@ -6,16 +6,16 @@ import { skills, stats } from "@/data/skills";
 // Group skills by category
 const skillCategories = {
   "Programming Languages": [
-    "JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"
+   "Python", "DAX", "SQL"
   ],
   "Frameworks & Libraries": [
-    "React", "Node.js", "Express", "TensorFlow", "PyTorch", "Pandas", "NumPy", "scikit-learn"
+    "Pandas", "NumPy", "scikit-learn","Seaborn","Matplotlib"
   ],
   "Tools & Platforms": [
-    "Git", "Docker", "AWS", "Google Cloud", "Jupyter", "VS Code", "PostgreSQL", "MongoDB"
+    "Git", "PowerBI", "Jupyter", "VS Code","Pycharm"
   ],
   "Data Science & Analytics": [
-    "Machine Learning", "Data Visualization", "Statistical Analysis", "NLP", "Computer Vision"
+    "Machine Learning", "Data Visualization", "Statistical Analysis","WebScraping"
   ]
 };
 

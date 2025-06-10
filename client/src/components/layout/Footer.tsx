@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between gap-8 mb-12">
           <div className="md:w-1/3">
             <a href="#hero" className="text-2xl font-bold mb-4 inline-block">
-              <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Tech</span>
+              <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Gaurang</span>
               <span className="text-white">Portfolio</span>
             </a>
             <p className="text-gray-400 mb-4">
@@ -72,9 +72,6 @@ const Footer: React.FC = () => {
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -94,7 +91,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">Resume</a></li>
-              <li><a href="#waitlist" className="text-gray-400 hover:text-white transition-colors">Join Waitlist</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -126,7 +122,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} TechPortfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} GaurangPortfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>

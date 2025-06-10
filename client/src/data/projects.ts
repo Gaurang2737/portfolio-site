@@ -11,13 +11,13 @@ export const projects: ProjectType[] = [
     githubLink: "https://github.com/example/dashboard"
   },
   {
-    title: "Predictive Analytics Platform",
-    description: "A machine learning platform that predicts customer behavior based on historical data and provides actionable insights.",
-    image: "predictive.jpg",
+    title: "🏠 Bangalore House Price Prediction",
+    description: "A full-stack Machine Learning web application that predicts housing prices in Bangalore using Linear Regression.",
+    image: "house_image.jpg",
     category: "Machine Learning",
-    technologies: ["Python", "TensorFlow", "Flask", "AWS"],
-    demoLink: "https://example.com/predictive",
-    githubLink: "https://github.com/example/predictive"
+    technologies: ["Python", "Scikit-learn", "Flask", "EDA"],
+    demoLink: "https://bangalore-house-price-prediction-glpl.onrender.com/",
+    githubLink: "https://github.com/Gaurang2737/Bangalore_House_Price_Prediction"
   },
   {
     title: "Financial Planning App",

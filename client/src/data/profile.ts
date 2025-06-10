@@ -1,18 +1,18 @@
 export const profile = {
-  name: "Alex Johnson",
-  title: "Senior Software Engineer & Data Scientist",
-  bio: "I'm a passionate technologist with 8+ years of experience building innovative solutions for complex problems. Specializing in data visualization and machine learning, I create tools that help companies make better decisions through data.",
-  email: "alex@techportfolio.com",
-  phone: "(555) 123-4567",
-  location: "San Francisco, CA",
-  company: "Currently at TechCorp",
-  education: "MS in Computer Science",
+  name: "Gaurang Sane",
+  title: "Data Science Student",
+  bio: "Student with a strong foundation in statistical analysis, machine learning, EDA and data visualization. I am passionate about turning complex data into actionable insights. ",
+  email: "gaurangtech9@gmail.com",
+  phone: "7507983413",
+  location: "Mumbai",
+  company: "Currently a student",
+  education: "Btech Data Science",
   resumeUrl: "/resume.pdf",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/Gaurang2737",
+    linkedin: "https://www.linkedin.com/in/gaurang-sane-84b5b1254",
     twitter: "https://twitter.com",
-    instagram: "https://instagram.com",
+    instagram: "https://www.instagram.com/gaurang_sane?igsh=Yml6Z2lnNXlkMmlj",
     youtube: "https://youtube.com"
   }
 };

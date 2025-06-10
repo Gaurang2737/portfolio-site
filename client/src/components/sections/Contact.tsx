@@ -237,26 +237,6 @@ const Contact: React.FC = () => {
                     <Instagram className="h-5 w-5" />
                   </a>
                 </Button>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  size="icon" 
-                  className="w-12 h-12 bg-[#1DA1F2] text-white hover:bg-[#1DA1F2]/90 border-0"
-                >
-                  <a href={profile.social.twitter} target="_blank" rel="noopener noreferrer">
-                    <Twitter className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  size="icon" 
-                  className="w-12 h-12 bg-[#FF0000] text-white hover:bg-[#FF0000]/90 border-0"
-                >
-                  <a href={profile.social.youtube} target="_blank" rel="noopener noreferrer">
-                    <Youtube className="h-5 w-5" />
-                  </a>
-                </Button>
               </div>
             </div>
           </motion.div>

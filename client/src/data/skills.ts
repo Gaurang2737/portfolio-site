@@ -48,16 +48,8 @@ export const areaOfExpertise: ExpertiseArea[] = [
 
 export const stats = [
   {
-    value: "8+",
-    label: "Years Experience"
-  },
-  {
     value: "50+",
     label: "Projects"
-  },
-  {
-    value: "20+",
-    label: "Clients"
   },
   {
     value: "15+",

@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
           <a className="text-xl font-bold">
-            <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Tech</span>
+            <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Gaurang</span>
             <span className="text-gray-900">Portfolio</span>
           </a>
         </Link>

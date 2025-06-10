@@ -31,6 +31,13 @@ const About: React.FC = () => {
           <div className="md:w-1/3 flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                 <img
+                  src="\imageG.png"
+                  alt="Gaurang Sane"
+                  className="w-full h-full object-cover"
+                 />
+              </div>
                 <svg
                   className="w-full h-full text-gray-300 bg-gray-200"
                   viewBox="0 0 24 24"
@@ -77,7 +84,12 @@ const About: React.FC = () => {
             <div className="flex gap-4">
               <Button asChild variant="default" className="bg-gray-900 hover:bg-gray-800">
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-4 w-4" /> Download Resume
+                  <Download className="mr-2 h-4 w-4" /> Data Scientist Resume
+                </a>
+              </Button>
+              <Button asChild variant="default" className="bg-gray-900 hover:bg-gray-800">
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" /> Data Analyst Resume
                 </a>
               </Button>
               <div className="flex gap-3">
