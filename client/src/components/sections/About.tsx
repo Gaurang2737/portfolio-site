@@ -82,12 +82,12 @@ const About: React.FC = () => {
             </div>
             
             <div className="flex gap-4">
-              <Button asChild variant="default" className="bg-gray-900 hover:bg-gray-800">
+              <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition">
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" /> Data Scientist Resume
                 </a>
               </Button>
-              <Button asChild variant="default" className="bg-gray-900 hover:bg-gray-800">
+              <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition">
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" /> Data Analyst Resume
                 </a>

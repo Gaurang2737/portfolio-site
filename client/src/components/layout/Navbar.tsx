@@ -61,11 +61,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               {item.label}
             </a>
           ))}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Resume
-            </Button>
-          </a>
         </div>
         
         {/* Mobile Menu Button */}
