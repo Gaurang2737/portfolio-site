@@ -39,11 +39,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 shadow-sm backdrop-blur-sm" : "bg-transparent"}`}>
       <nav className="flex flex-col md:flex-row justify-between items-center p-4">
-        <Link to="/">
-          <a className="text-xl font-bold">
+        <Link to="/" className="text-xl font-bold">
             <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Gaurang</span>
             <span className="text-gray-900">Portfolio</span>
-          </a>
         </Link>
         
         {/* Desktop Navigation */}
