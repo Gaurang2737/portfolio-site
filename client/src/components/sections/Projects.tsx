@@ -14,8 +14,8 @@ const Projects: React.FC = () => {
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
           Here are some of my recent projects showcasing my technical expertise and problem-solving skills.
         </p>
-        
-        <motion.div 
+
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,19 +23,19 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
         >
           {projects.slice(0, 3).map((project, index) => (
-            <ProjectCard 
-              key={index} 
-              project={project} 
-            />
+            <ProjectCard key={index} project={project} />
           ))}
         </motion.div>
-        
+
         <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
+          <Button
+            asChild
+            variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-white"
           >
-            View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+            <a href="/projects">
+              View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
       </div>

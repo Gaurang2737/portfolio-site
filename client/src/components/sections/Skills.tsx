@@ -1,21 +1,28 @@
 import React from "react";
 import SkillTag from "@/components/ui/skill-tag";
 import { motion } from "framer-motion";
-import { skills, stats } from "@/data/skills";
+import { stats } from "@/data/skills";
 
 // Group skills by category
 const skillCategories = {
-  "Programming Languages": [
-   "Python", "DAX", "SQL"
+  "Programming & Query Languages": [
+    "Python", "SQL"
   ],
-  "Frameworks & Libraries": [
-    "Pandas", "NumPy", "scikit-learn","Seaborn","Matplotlib"
+  "Data Analysis & Visualization": [
+    "EDA", "Statistical Analysis", "Data Cleaning", "Feature Engineering", 
+    "Data Visualization", "Hypothesis Testing", "Correlation Analysis", 
+    "Matplotlib", "Seaborn", "Plotly", "Power BI"
+  ],
+  "Machine Learning": [
+    "Supervised Learning", "Unsupervised Learning", "Linear Regression", 
+    "Logistic Regression", "Decision Trees", "Random Forest", "Regularization (Lasso, Ridge)", 
+    "Model Evaluation", "Cross Validation", "Hyperparameter Tuning"
   ],
   "Tools & Platforms": [
-    "Git", "PowerBI", "Jupyter", "VS Code","Pycharm"
+    "Jupyter Notebook", "Google Colab", "Git & GitHub", "Linux Basics", "VS Code", "PyCharm"
   ],
-  "Data Science & Analytics": [
-    "Machine Learning", "Data Visualization", "Statistical Analysis","WebScraping"
+  "Deployment & APIs": [
+    "Flask", "REST APIs", "Render", "Vercel"
   ]
 };
 
