@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 shadow-sm backdrop-blur-sm" : "bg-transparent"}`}>
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <nav className="flex flex-col md:flex-row justify-between items-center p-4">
         <Link href="/">
           <a className="text-xl font-bold">
             <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">Gaurang</span>

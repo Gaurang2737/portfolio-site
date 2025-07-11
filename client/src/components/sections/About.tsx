@@ -18,9 +18,11 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-24 md:pt-32 md:pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
+        {/* Heading */}
         <h2 className="text-3xl font-bold mb-2 text-center">About Me</h2>
         <div className="w-24 h-1 bg-primary rounded-full mx-auto mb-12"></div>
-        
+
+        {/* Content */}
         <motion.div 
           className="flex flex-col md:flex-row gap-8 items-center"
           initial={{ opacity: 0, y: 20 }}
@@ -28,71 +30,66 @@ const About: React.FC = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <div className="md:w-1/3 flex justify-center">
+          {/* LEFT IMAGE */}
+          <div className="w-full md:w-1/3 flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                 <img
-                  src="\imageG.png"
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img
+                  src="/imageG.png"
                   alt="Gaurang Sane"
                   className="w-full h-full object-cover"
-                 />
-              </div>
-                <svg
-                  className="w-full h-full text-gray-300 bg-gray-200"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                />
               </div>
               <div className="absolute -bottom-3 -right-3 bg-primary text-white rounded-full p-4">
                 <Code className="h-5 w-5" />
               </div>
             </div>
           </div>
-          
-          <div className="md:w-2/3">
-            <h3 className="text-2xl font-bold mb-4">{profile.name}</h3>
-            <p className="text-gray-600 mb-4">{profile.title}</p>
-            <p className="mb-6">{profile.bio}</p>
-            
+
+          {/* RIGHT TEXT */}
+          <div className="w-full md:w-2/3 mt-6 md:mt-0">
+            <h3 className="text-2xl font-bold mb-2 text-center md:text-left">{profile.name}</h3>
+            <p className="text-gray-600 mb-4 text-center md:text-left">{profile.title}</p>
+            <p className="mb-6 text-center md:text-left">{profile.bio}</p>
+
+            {/* Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <Mail className="text-primary mr-2 h-5 w-5" />
                 <span>{profile.email}</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <MapPin className="text-primary mr-2 h-5 w-5" />
                 <span>{profile.location}</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <Briefcase className="text-primary mr-2 h-5 w-5" />
                 <span>{profile.company}</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <GraduationCap className="text-primary mr-2 h-5 w-5" />
                 <span>{profile.education}</span>
               </div>
             </div>
-            
-            <div className="flex gap-4">
-              <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-4 w-4" /> Data Scientist Resume
-                </a>
-              </Button>
-              <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-4 w-4" /> Data Analyst Resume
-                </a>
-              </Button>
-              <div className="flex gap-3">
+
+            {/* Buttons & Socials */}
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+              {/* Resume Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition w-full sm:w-auto">
+                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" /> Data Scientist Resume
+                  </a>
+                </Button>
+                <Button asChild variant="default" className="bg-gray-900 text-white font-semibold px-6 py-2 rounded shadow hover:bg-gray-800 transition w-full sm:w-auto">
+                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" /> Data Analyst Resume
+                  </a>
+                </Button>
+              </div>
+
+              {/* Social Icons */}
+              <div className="flex gap-3 justify-center sm:justify-start">
                 <Button 
                   asChild 
                   variant="outline" 
