@@ -19,7 +19,7 @@ const skillCategories = {
     "Model Evaluation", "Cross Validation", "Hyperparameter Tuning"
   ],
   "Tools & Platforms": [
-    "Jupyter Notebook", "Google Colab", "Git & GitHub", "Linux Basics", "VS Code", "PyCharm"
+    "Jupyter Notebook", "Google Colab", "Git & GitHub", "VS Code", "PyCharm"
   ],
   "Deployment & APIs": [
     "Flask", "REST APIs", "Render", "Vercel"
